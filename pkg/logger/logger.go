@@ -31,7 +31,7 @@ func (l *Logger) Info(msg string) {
 }
 
 func (l *Logger) Error(err error) {
-	l.l.Error().Err(err)
+	l.l.Error().Err(err).Msg("error occured")
 }
 
 func (l *Logger) Debug(msg string) {
